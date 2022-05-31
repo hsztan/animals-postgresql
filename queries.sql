@@ -76,7 +76,7 @@ WHERE species.name = 'Pokemon';
 
 -- List all owners and their animals, remember to include those that don't own any animal.
 SELECT owners.full_name, animals.name FROM owners
-JOIN animals
+RIGHT JOIN animals
 ON owners.id = animals.owner_id;
 
 -- How many animals are there per species?
