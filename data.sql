@@ -31,4 +31,4 @@ INSERT INTO animals (id, name, date_of_birth, weight_kg, neutered,escape_attempt
 VALUES (10, 'Blossom', '1998-10-13', 17.0, TRUE, 3, 'cat');
 
 INSERT INTO animals (id, name, date_of_birth, weight_kg, neutered,escape_attempts, species)
-VALUES (5, 'Ditto', '2022-05-14', 22.0, TRUE, 4, 'cat');
+VALUES (11, 'Ditto', '2022-05-14', 22.0, TRUE, 4, 'cat');
