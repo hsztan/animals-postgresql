@@ -52,3 +52,11 @@ VALUES ('Dean Winchester', 14);
 
 INSERT INTO owners (full_name, age)
 VALUES ('Jodie Whittaker', 38);
+
+/* Data for species table */
+
+INSERT INTO species (name)
+VALUES ('Pokemon');
+
+INSERT INTO species (name)
+VALUES ('Digimon');
