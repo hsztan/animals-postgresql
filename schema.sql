@@ -29,3 +29,11 @@ DROP COLUMN id;
 ALTER TABLE animals
 ADD COLUMN ID SERIAL PRIMARY KEY;
 
+ALTER TABLE animals
+DROP COLUMN species;
+
+ALTER TABLE animals
+ADD COLUMN species_id integer REFERENCES species(id);
+
+ALTER TABLE animals
+ADD COLUMN owner_id integer REFERENCES owners(id);
