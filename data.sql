@@ -94,6 +94,8 @@ WHERE name = 'Angemon' OR name = 'Boarmon';
 
 -- Insertions for many to many relationships
 
+-- Insert Vets data
+
 INSERT INTO vets (name, age, date_of_graduation)
 VALUES ('William Tatcher', 45, '2000-04-23');
 
@@ -105,3 +107,17 @@ VALUES ('Stephanie Mendez', 64, '1981-05-04');
 
 INSERT INTO vets (name, age, date_of_graduation)
 VALUES ('Jack Harkness', 38, '2008-06-08');
+
+-- Insert Specialties data
+
+INSERT INTO specializations (vet_id, species_id)
+VALUES (4, 1);
+
+INSERT INTO specializations (vet_id, species_id)
+VALUES (6, 2);
+
+INSERT INTO specializations (vet_id, species_id)
+VALUES (6, 1);
+
+INSERT INTO specializations (vet_id, species_id)
+VALUES (7, 2);
