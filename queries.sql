@@ -106,3 +106,44 @@ ON animals.owner_id = owners.id
 GROUP BY owners.full_name
 ORDER BY COUNT(owner_id) DESC
 LIMIT 1;
+
+-- QUERIES FOR MANY TO MANY RELATIONSHIPS
+
+-- Who was the last animal seen by William Tatcher?
+SELECT animals.name FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'William Tatcher'
+ORDER BY visits.date DESC;
+
+-- How many different animals did Stephanie Mendez see?
+SELECT COUNT(animals.name) FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'Stephanie Mendez';
+
+-- List all vets and their specialties, including vets with no specialties.
+SELECT vets.name, species.name FROM vets
+LEFT JOIN specializations ON vets.id = specializations.vet_id
+LEFT JOIN species ON specializations.species_id = species.id;
+
+-- List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
+SELECT animals.name FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'Stephanie Mendez' AND visits.date >= '2020-04-01' AND visits.date <= '2020-08-30';
+
+-- What animal has the most visits to vets?
+SELECT animals.name FROM animals
+JOIN visits ON animals.id = visits.animal_id
+GROUP BY animals.name
+ORDER BY COUNT(visits.animal_id) DESC
+LIMIT 1;
+
+-- Who was Maisy Smith's first visit?
+SELECT animals.name FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'Maisy Smith'
+ORDER BY visits.date ASC
+LIMIT 1;
