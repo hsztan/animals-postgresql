@@ -2,7 +2,6 @@
 
 > We will be building a "Vet clinic" database which will include various SQL query commands.
 
-
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -11,7 +10,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
-
 ## Author
 
 👤 **Henry Sztanski**
@@ -19,6 +17,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitHub: [@hsztan](https://github.com/hsztan)
 - Twitter: [@hsztanski](https://github.com/hsztan)
 - LinkedIn: [@henry-nawrocki](https://linkedin.com/in/henry-nawrocki)
+
+👤 **Fernando Saldaña**
+
+- GitHub: [@fasaldana](https://github.com/fasaldana)
+- Twitter: [@Fernandosal98](https://twitter.com/Fernandosal98)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fernando-saldana-8bbb89228/)
 
 ## 🤝 Contributing
 
